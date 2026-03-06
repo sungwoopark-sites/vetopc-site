@@ -1,0 +1,42 @@
+{
+  "business_name": "Veterinary Out-Patient Clinic",
+  "short_name": "VetOPC",
+  "phone": "(714) 744-8995",
+  "email": "info@VetOPC.com",
+  "address": "1267 N Tustin St, Orange, CA 92867",
+  "address_note": "Corner of Tustin and Katella — Located in the Petco/Michaels Center. Near the 55 freeway.",
+  "hours": null,
+  "pricing": {
+    "exam": "$60",
+    "anesthetic_dental_starting": "$275"
+  },
+  "services": [
+    "Low Cost Vaccines",
+    "Anesthetic Dental Cleaning & Polishing",
+    "Spay & Neuter",
+    "Surgery",
+    "Flea Control",
+    "Microchips",
+    "Skin Care",
+    "Labwork",
+    "Veterinary Diet",
+    "Outdoor Vaccines (Rattlesnake, Leptospirosis)"
+  ],
+  "testimonials": [
+    {
+      "quote": "The team at Veterinary Out-Patient Clinic always takes time to explain everything. They helped my dog feel better within hours — and they treated us like family.",
+      "author": "Amanda R., Pet Parent"
+    }
+  ],
+  "about_text": "Veterinary Out-Patient Clinic (VetOPC) provides affordable pet care for dogs and cats in Orange, CA. We focus on out-patient services, meaning no overnight stays or long waits. Conveniently located near the 55 freeway at the corner of Tustin St & E Katella Avenue.",
+  "tagline": "Low cost veterinary pet services for dogs and cats",
+  "brand_colors": {
+    "primary": "#2a7d4f",
+    "secondary": "#4caf7d"
+  },
+  "original_url": "http://www.vetopc.com/",
+  "images_downloaded": [
+    "assets/images/office.jpg"
+  ],
+  "scraping_notes": "Only one image found on original Squarespace site (office.jpg). Email hidden in page metadata but extracted: info@VetOPC.com."
+}
