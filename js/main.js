@@ -22,19 +22,24 @@ window.addEventListener('scroll', () => {
 // Mobile nav
 const navToggle = document.querySelector('.nav-toggle');
 const mobileNav = document.getElementById('mobile-nav');
-navToggle.addEventListener('click', () => {
-  const isOpen = mobileNav.classList.toggle('open');
-  navToggle.classList.toggle('active', isOpen);
-  navToggle.setAttribute('aria-expanded', isOpen);
-  mobileNav.setAttribute('aria-hidden', !isOpen);
-});
-mobileNav.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => {
-    mobileNav.classList.remove('open');
-    navToggle.classList.remove('active');
-    navToggle.setAttribute('aria-expanded', 'false');
-    mobileNav.setAttribute('aria-hidden', 'true');
+const mobileNavLinks = mobileNav.querySelectorAll('a');
+
+function setMobileNavState(open) {
+  mobileNav.classList.toggle('open', open);
+  navToggle.classList.toggle('active', open);
+  navToggle.setAttribute('aria-expanded', open);
+  mobileNav.setAttribute('aria-hidden', !open);
+  mobileNavLinks.forEach(a => {
+    if (open) { a.removeAttribute('tabindex'); } else { a.setAttribute('tabindex', '-1'); }
   });
+}
+
+navToggle.addEventListener('click', () => {
+  const isOpen = !mobileNav.classList.contains('open');
+  setMobileNavState(isOpen);
+});
+mobileNavLinks.forEach(a => {
+  a.addEventListener('click', () => setMobileNavState(false));
 });
 
 // FormSubmit.co AJAX

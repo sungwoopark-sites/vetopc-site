@@ -69,14 +69,14 @@ address { font-style: normal; }
 .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(42,125,79,0.88) 0%, rgba(20,80,50,0.75) 50%, rgba(0,0,0,0.5) 100%); }
 .hero-content { position: relative; z-index: 1; color: #fff; padding: 80px 24px; max-width: 660px; }
-.exam-badge { display: inline-block; background: var(--accent); color: #fff; font-size: 0.9rem; font-weight: 800; padding: 6px 18px; border-radius: 999px; margin-bottom: 20px; }
+.exam-badge { display: inline-block; background: var(--accent); color: #1a1a00; font-size: 0.9rem; font-weight: 800; padding: 6px 18px; border-radius: 999px; margin-bottom: 20px; }
 .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 800; line-height: 1.15; margin-bottom: 14px; }
-.hero-sub { font-size: 0.95rem; font-weight: 600; opacity: 0.85; margin-bottom: 10px; letter-spacing: 0.04em; }
-.hero-desc { font-size: 1.05rem; opacity: 0.85; margin-bottom: 36px; line-height: 1.7; }
+.hero-sub { font-size: 0.95rem; font-weight: 600; color: #fff; margin-bottom: 10px; letter-spacing: 0.04em; }
+.hero-desc { font-size: 1.05rem; color: #fff; margin-bottom: 36px; line-height: 1.7; }
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
 /* OFFER BANNER */
-.offer-banner { background: var(--primary); color: #fff; padding: 18px 24px; }
+.offer-banner { background: var(--primary-dark); color: #fff; padding: 18px 24px; }
 .offer-inner { display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; }
 .offer-text { font-size: 1rem; font-weight: 600; }
 .offer-text strong { font-size: 1.2rem; }
